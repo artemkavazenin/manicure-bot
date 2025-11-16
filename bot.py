@@ -333,3 +333,4 @@ async def notify_admin_new_booking(appointment_id: int):
             await bot.send_message(admin_id, notification, parse_mode="HTML")
         except Exception as e:
             logger.error(f"Не удалось отправить уведомление админу {admin_id}: {e}")
+
